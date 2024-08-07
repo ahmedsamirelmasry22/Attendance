@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ontime Attendance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="ontime logo.png" alt="ontime logo" class="logo">
+            <h1>Ontime Attendance</h1>
+        </header>
+        <div class="employee-list">
+            <select id="employeeDropdown" onchange="handleEmployeeSelection()">
+                <option value="" disabled selected>Select Employee</option>
+                <!-- Options will be populated dynamically from JavaScript -->
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Check In</th>
+                    <th>Check Out</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTable">
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
